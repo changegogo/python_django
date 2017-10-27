@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{%block hellobody1 %}
+	<ul id="ullist">
+	{% for item in users reversed %}
+		<li>{{ item.name }} {{ item.age }}</li>
+	{% endfor %}
+	</ul>
+{% endblock %}
